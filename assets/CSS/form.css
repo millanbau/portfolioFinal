@@ -1,0 +1,93 @@
+   .form-container {
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+
+    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  .form-container * {
+    box-sizing: border-box;
+  }
+  
+  .form-container h2
+  {
+    margin: 0;
+    margin-top: 45px;
+    padding-bottom: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #006350 ;
+  }
+
+  .flex-outer,
+  .flex-inner {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .flex-outer li label,
+  .flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #006350;
+  }
+  
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+  
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 220px;
+  }
+  
+  .flex-outer li p {
+    margin: 0;
+  }
+  
+  .flex-outer li input:not([type='checkbox']),
+  .flex-outer li textarea {
+    padding: 15px;
+    border: none;
+  }
+  
+  .flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #006350;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+  }
